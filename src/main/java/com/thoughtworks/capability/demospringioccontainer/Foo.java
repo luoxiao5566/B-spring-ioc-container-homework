@@ -8,7 +8,6 @@ public class Foo {
 
     private Bar bar;
 
-    @Autowired
     public void setBar(Bar bar) {
         this.bar = bar;
     }
