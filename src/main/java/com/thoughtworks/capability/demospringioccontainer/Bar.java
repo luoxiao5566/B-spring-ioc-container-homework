@@ -8,12 +8,10 @@ import javax.annotation.PostConstruct;
 @Component
 public class Bar {
 
-    @Autowired
     private Foo foo;
 
-    @PostConstruct
-    public void init() {
-        foo.setBar(this);
+    public Bar(Foo foo) {
+        this.foo = foo;
     }
 
     public void hi() {
